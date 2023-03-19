@@ -1,0 +1,32 @@
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+.myText > h1, .myText > p {
+    fill: white;
+    color: white
+}
+
+.myText {
+    padding: 8em!important;
+    background-image: url('../images/work.jpg');
+}
+
+.myText > h1 > span {
+    font-size: 7vh;
+    padding: 2vh;
+    line-height: 15vh;
+    font-weight: bolder;
+    background-color: rgba(3, 38, 60, 0.8);
+}
+.myText > p > span {
+    font-size: 3vh;
+    padding: 2vh;
+    line-height: 10vh;
+    background-color: rgba(3, 38, 60, 0.8);
+}
+
+.navbar-collapse {
+    flex-grow:unset!important;
+}
