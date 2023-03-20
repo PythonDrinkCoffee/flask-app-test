@@ -30,3 +30,15 @@
 .navbar-collapse {
     flex-grow:unset!important;
 }
+
+.footer {
+    background-color: rgba(3, 38, 60);
+}
+
+.img-fluid {
+    width: 80%;
+}
+
+.rating {
+    font-size: 7vh;
+}

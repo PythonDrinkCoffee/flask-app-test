@@ -43,6 +43,51 @@ PROJECTS = [
     },
 ]
 
+RATINGS = [
+    {
+        "title" : "Project 1",
+        "rate" : "5.0/5.0",
+        "comment": "Lorem ipsum dolor sit amet, consectetur...",
+        "picture": "address",
+        "user": "Rajesh Suomediani",
+    },
+    {
+        "title" : "Project 2",
+        "rate" : "5.0/5.0",
+        "comment": "Lorem ipsum dolor sit amet, consectetur...",
+        "picture": "address",
+        "user": "Rajesh Suomediani",
+    },
+    {
+        "title" : "Project 3",
+        "rate" : "5.0/5.0",
+        "comment": "Lorem ipsum dolor sit amet, consectetur...",
+        "picture": "address",
+        "user": "Rajesh Suomediani",
+    },
+    {
+        "title" : "Project 4",
+        "rate" : "5.0/5.0",
+        "comment": "Lorem ipsum dolor sit amet, consectetur...",
+        "picture": "address",
+        "user": "Rajesh Suomediani",
+    },
+    {
+        "title" : "Project 5",
+        "rate" : "5.0/5.0",
+        "comment": "Lorem ipsum dolor sit amet, consectetur...",
+        "picture": "address",
+        "user": "Rajesh Suomediani",
+    },
+    {
+        "title" : "Project 6",
+        "rate" : "5.0/5.0",
+        "comment": "Lorem ipsum dolor sit amet, consectetur...",
+        "picture": "address",
+        "user": "Rajesh Suomediani",
+    },
+]
+
 @app.route('/', methods=['GET'])
 def hello():
     title = "First App - flask 2023"
@@ -50,7 +95,9 @@ def hello():
     return render_template("index.html", 
                            title=title, 
                            description=description,  
-                           projects=PROJECTS)
+                           projects=PROJECTS,
+                           ratings=RATINGS
+                           )
 
 @app.route('/api/projects')
 def projects():
