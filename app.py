@@ -91,7 +91,7 @@ RATINGS = [
 @app.route('/', methods=['GET'])
 def hello():
     title = "First App - flask 2023"
-    description = "Welcome to my first applications built with Flask framework"
+    description = "Welcome to my first application built with Flask framework"
     return render_template("index.html", 
                            title=title, 
                            description=description,  
